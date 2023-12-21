@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #1a1a1a 50%, #333 50%); /* Tamno siva/crna pozadina */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.full-height {
+    min-height: 100vh;
+}
+
+.blob {
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    background: linear-gradient(135deg, rgba(255, 0, 0, 0.2), rgba(200, 0, 0, 0.2)); /* Transparentni crveni kružić */
+    border-radius: 50%;
+    z-index: -1;
+    top: -100px;
+    left: -100px;
+    animation: animateBlob 20s infinite alternate;
+}
+
+.wrapper {
+    position: relative;
+    width: 400px;
+    height: 600px;
+    background: rgba(255, 0, 0, 0.2); /* Blaga crvena transparentna forma */
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+h2 {
+    font-size: 2em;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.input-box {
+    position: relative;
+    width: 320px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #fff;
+}
+
+.input-box label, .input-box input {
+    font-size: 1em;
+    color: #fff;
+    transition: .5s;
+}
+
+.input-box label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+.input-box input {
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    padding: 0 35px 0 5px;
+}
+
+.input-box .icon {
+    position: absolute;
+    right: 8px;
+    font-size: 1.2em;
+    line-height: 57px;
+}
+
+.input-box input:focus ~ label,
+.input-box input:valid ~ label {
+    top: 5px;
+}
+
+button {
+    width: 100%;
+    height: 45px;
+    background: #ff5555;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 500;
+}
+
+@keyframes animateBlob {
+    100% {
+        transform: translate(100px, 100px) scale(1.2);
+    }
+}
