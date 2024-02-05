@@ -10,7 +10,7 @@
 <body>
 <div class="blob"></div>
 <div class="wrapper">
-    <form action="LogInUserServlet" method="POST">
+    <form action="LogInServlet" method="POST">
         <h2>Log in</h2>
         <div class="input-box">
             <span class="icon"><ion-icon name="mail-outline"/></span>
@@ -30,7 +30,6 @@
 </div>
 <script>
     function redirectToSignUp() {
-        // Ovde dodajte URL za stranicu za registraciju
         window.location.href = 'SignUpPage.jsp';
     }
 </script>

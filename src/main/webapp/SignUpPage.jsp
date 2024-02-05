@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Sign Up Form</title>
-  <!-- Dodajte stilove ili linkove ka CSS fajlovima ovde ako je potrebno -->
+  <title>Sign Up</title>
   <link href="css/SignUp.css" rel="stylesheet"/>
 </head>
 <body><div class="blob"></div>
@@ -40,5 +39,7 @@
       <label>Password</label>
     </div>
     <button type="Submit">Sign up</button>
+  </form>
+</div>
 </body>
 </html>
