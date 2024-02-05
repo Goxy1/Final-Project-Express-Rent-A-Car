@@ -1,0 +1,25 @@
+.custom-col-3 {
+    border-radius: 15px;
+    transition: all 0.3s ease;
+}
+
+.custom-col-3:hover {
+    transform: scale(1.05);
+}
+
+.card-img-top {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.btn-primary {
+    border-radius: 5px;
+    background-color: #007bff;
+    border-color: #007bff;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}

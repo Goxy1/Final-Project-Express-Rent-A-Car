@@ -5,7 +5,7 @@ html, body {
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
-    background: linear-gradient(135deg, #1a1a1a 50%, #333 50%); /* Tamno siva/crna pozadina */
+    background: linear-gradient(135deg, #1a1a1a 50%, #333 50%);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -25,7 +25,7 @@ html, body {
     position: absolute;
     width: 600px;
     height: 600px;
-    background: linear-gradient(135deg, rgba(255, 0, 0, 0.2), rgba(200, 0, 0, 0.2)); /* Transparentni crveni kružić */
+    background: linear-gradient(135deg, rgba(255, 0, 0, 0.2), rgba(200, 0, 0, 0.2));
     border-radius: 50%;
     z-index: -1;
     top: -100px;
@@ -37,7 +37,7 @@ html, body {
     position: relative;
     width: 400px;
     height: 600px;
-    background: rgba(255, 0, 0, 0.2); /* Blaga crvena transparentna forma */
+    background: rgba(255, 0, 0, 0.2);
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
     border: 1px solid rgba(255, 255, 255, 0.18);
     border-radius: 20px;

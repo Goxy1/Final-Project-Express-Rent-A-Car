@@ -1,0 +1,55 @@
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 250px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    overflow-y: auto;
+    z-index: 999;
+}
+.menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.menu li {
+    margin-bottom: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    letter-spacing: 1.4px;
+    font-size: 12px;
+}
+.menu a {
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #333;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    letter-spacing: 1.4px;
+    font-size: 12px;
+}
+.menu a:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    bottom: 0;
+    width: 250px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    overflow-y: auto;
+    z-index: 999;
+    transition: left 0.3s;
+}
+
+.sidebar.open {
+    left: 0;
+}

@@ -1,17 +1,18 @@
 package Servlets;
 
 import DB.ConnectionDataBase;
-import jakarta.servlet.*;
-import jakarta.servlet.http.*;
-import jakarta.servlet.annotation.*;
+import jakarta.servlet.ServletException;
+import jakarta.servlet.annotation.WebServlet;
+import jakarta.servlet.http.Cookie;
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
 
 import java.io.IOException;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-
-import static DB.ConnectionDataBase.connection;
 
 @WebServlet(name = "SignUpServlet", value = "/SignUpServlet")
 public class SignUpServlet extends HttpServlet {
@@ -32,14 +33,14 @@ public class SignUpServlet extends HttpServlet {
         String addressField = request.getParameter("address");
         String passwordField = request.getParameter("password");
 
-        query = "select ID,email from user where email = ?";
+        query = "select ID,email from korisnik where email = ?";
+
 
         try{
             PreparedStatement statement = connection.prepareStatement(query);
             statement.setString(1, emailField);
             ResultSet resultSet = statement.executeQuery();
 
-            //Set the cookie for email
             Cookie cookieEmail = new Cookie("UserEmail", emailField);
             response.addCookie(cookieEmail);
 
@@ -47,17 +48,10 @@ public class SignUpServlet extends HttpServlet {
             {
                 errorEmailAddress = true;
                 request.setAttribute("errorEmail", errorEmailAddress);
-                RequestDispatcher rd = request.getRequestDispatcher("SignUpPage.jsp");
-
-                try{
-                    rd.forward(request, response);
-                }catch (ServletException | IOException e)
-                {
-                    e.printStackTrace();
-                }
+                response.sendRedirect("../EmailError.jsp");
             }
             else{
-                query = "insert into user(FirstName,LastName,Email,PhoneNumber,Address,Password) values (?,?,?,?,?,password(?))";
+                query = "insert into korisnik(FirstName,LastName,Email,PhoneNumber,Address,Password) values (?,?,?,?,?,password(?))";
 
                 PreparedStatement statement1 = connection.prepareStatement(query);
 

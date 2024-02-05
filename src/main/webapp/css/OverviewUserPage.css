@@ -1,0 +1,8 @@
+.main-content {
+    padding-right: 250px;
+    transition: padding-left .5s;
+}
+
+.sidebar.open ~ .main-content {
+    padding-left: 0;
+}
