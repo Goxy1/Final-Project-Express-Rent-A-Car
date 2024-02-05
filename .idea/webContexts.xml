@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebContextManager">
+    <option name="state">
+      <map>
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/AdminPages/AddACarAdminPage.jsp" value="file://$PROJECT_DIR$/src/main/webapp/AdminPages" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/AdminPages/EditCars.jsp" value="file://$PROJECT_DIR$/src/main/webapp/AdminPages" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/AdminPages/UpdateUser.jsp" value="file://$PROJECT_DIR$/src/main/webapp/AdminPages" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/ManagerPages/OverviewManagerPage.jsp" value="file://$PROJECT_DIR$/src/main/webapp/ManagerPages" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/ManagerPages/UpdateUserReservationManagerPage.jsp" value="file://$PROJECT_DIR$/src/main/webapp/ManagerPages" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/SignUpPage.jsp" value="file://$PROJECT_DIR$/src/main/webapp" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/UserPages/DetailedInformationsCarPage.jsp" value="file://$PROJECT_DIR$/src/main/webapp/UserPages" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/UserPages/OverviewUserPage.jsp" value="file://$PROJECT_DIR$/src/main/webapp/UserPages" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/UserPages/ShowUserReservations.jsp" value="file://$PROJECT_DIR$/src/main/webapp/UserPages" />
+      </map>
+    </option>
+  </component>
+</project>
